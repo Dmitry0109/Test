@@ -1,5 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 section {
   width: 1280px;
   height: 908px;
-  background-image: assest/img/
+  background-image: url(assest/img/start-screen-gradient-background.jpg);
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 40px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: georgia;
+  font-size: 32px;
+  color: rgba(241, 205, 179, 1);
+}
+
+.subtitle {
+  font-family: arial;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav {
+  display: flex;
+  width: 443px;
+  height: 27px;
+  justify-content: space-between;
+  font-family: arial;
+  font-size: 15px;
+  color: rgba(205, 205, 205, 1);
+}
+.navHeader1 {
+  color: rgba(250, 250, 250, 1);
 }
