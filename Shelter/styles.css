@@ -365,11 +365,22 @@ main {
 .buttonPrimaryleft {
   width: 52px;
   height: 52px;
+  border-radius: 100px;
+  border: 2px solid #F1CDB3;
+  background-image: url(assest/img/Arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .buttonPrimaryRight {
   width: 52px;
   height: 52px;
+  border-radius: 100px;
+  border-color: #F1CDB3;
+  border: 2px solid #F1CDB3;
+  background-image: url(assest/img/Arrow\ \(1\).png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .petsKatrine {
@@ -427,8 +438,6 @@ main {
   height: 52px;
   border-radius: 100px;
   padding: 15px 41px;
-  width: 187px;
-  height: 52px;
   border: 2px solid rgba(241, 205, 179, 1);
   font-family: georgia;
   background-color: rgba(250, 250, 250, 1);
